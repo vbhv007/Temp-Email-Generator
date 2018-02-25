@@ -1,0 +1,30 @@
+body{
+  background-color:  #071339;
+  width:95%;
+  height:95%;
+  color: white; 
+}
+
+h2, h4{
+  color: white;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.butn{
+  color: #071339;
+}
+
+#p1{
+  font-size: 12px;
+}
+
+#sign{
+  color: #071339;
+}
+
+#sign:hover{
+  color: white;
+}
