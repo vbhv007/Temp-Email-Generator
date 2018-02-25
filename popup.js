@@ -4,25 +4,19 @@ function randomString(length, chars) {
     return result;
 }
 
-function copyToClipboard(element) {
-  var temp = ("<input>");
-  ("body").append(temp);
-  temp.val((element).text()).select();
-  document.execCommand("copy");
-  temp.remove();
-}
-
 var url = '';
 
 function copy(){
   var str;
   str = randomString(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
   url = 'http://www.dispostable.com/inbox/' + str + '/';
-  //document.getElementById('p1').innerHTML = url;
-  copyToClipboard('#p1');
+  document.getElementById('p1').value = url;
+  sel = document.getElementById('p1');
+  sel.select();
+  document.execCommand("copy");
   return url;
 }
-document.getElementById('copy').onclick=copy;
+document.getElementById('copy').onclick = copy;
 
 function generate(){
   if(url==''){
