@@ -18,6 +18,7 @@ function copy(){
   if(copied.innerHTML==''){
     copied.innerHTML = 'Copied to clipboard';
   }
+  setTimeout(function(){ copied.innerHTML = ''; }, 1500);
   return url;
 }
 document.getElementById('copy').onclick = copy;
@@ -31,4 +32,3 @@ function generate(){
   window.open(url);
 }
 document.getElementById('inbox').onclick=generate;
-
