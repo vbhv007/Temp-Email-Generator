@@ -18,7 +18,7 @@ function copy(){
   var str;
   str = randomString(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
   url = 'http://www.dispostable.com/inbox/' + str + '/';
-  document.getElementById('p1').innerHTML = url;
+  //document.getElementById('p1').innerHTML = url;
   copyToClipboard('#p1');
   return url;
 }
