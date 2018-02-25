@@ -7,13 +7,17 @@ function randomString(length, chars) {
 var url = '';
 
 function copy(){
-  var str;
+  var str, sel, copied;
   str = randomString(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
   url = 'http://www.dispostable.com/inbox/' + str + '/';
   document.getElementById('p1').value = url;
   sel = document.getElementById('p1');
   sel.select();
   document.execCommand("copy");
+  copied = document.getElementById('copied');
+  if(copied.innerHTML==''){
+    copied.innerHTML = 'Copied to clipboard';
+  }
   return url;
 }
 document.getElementById('copy').onclick = copy;
@@ -27,3 +31,4 @@ function generate(){
   window.open(url);
 }
 document.getElementById('inbox').onclick=generate;
+

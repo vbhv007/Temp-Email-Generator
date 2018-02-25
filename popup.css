@@ -1,7 +1,7 @@
 body{
   background-color:  #071339;
   width: 325px;
-  height: 130px;
+  height: 140px;
   color: white;
 }
 
@@ -28,3 +28,4 @@ a{
 #sign:hover{
   color: white;
 }
+
