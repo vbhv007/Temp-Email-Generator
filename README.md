@@ -4,5 +4,9 @@ This is a chrome extension which generates a temporary email and also lets user 
 Instructions for chrome:
 Download & go to chrome://extensions and select it.
 
-Instructions for fifefox:
+Instructions for firefox:
 Use the '.xpi' in addons in firefox.
+
+
+Credits for Firefox conversion:
+Tanay Agarwal (Raggedy-Man)
