@@ -20,7 +20,7 @@ function copy(){
     copied.innerHTML = 'Copied to clipboard';
   }
   setTimeout(function(){ copied.innerHTML = ''; }, 1500);
-  return email;
+  return url;
 }
 document.getElementById('copy').onclick = copy;
 
