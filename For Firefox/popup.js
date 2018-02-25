@@ -10,7 +10,8 @@ function copy(){
   var str, sel, copied;
   str = randomString(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
   url = 'http://www.dispostable.com/inbox/' + str + '/';
-  document.getElementById('p1').value = url;
+  email=str+"@dispostable.com";
+  document.getElementById('p1').value = email;
   sel = document.getElementById('p1');
   sel.select();
   document.execCommand("copy");
@@ -19,7 +20,7 @@ function copy(){
     copied.innerHTML = 'Copied to clipboard';
   }
   setTimeout(function(){ copied.innerHTML = ''; }, 1500);
-  return url;
+  return email;
 }
 document.getElementById('copy').onclick = copy;
 
